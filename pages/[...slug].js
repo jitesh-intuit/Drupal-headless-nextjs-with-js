@@ -7,7 +7,6 @@ import { NodeArticle } from '../components/node--article';
 import { NodeEvent } from '../components/node--event';
 import { NodePerson } from '../components/node--person';
 import { NodePlace } from '../components/node--place';
-import { NodeNews } from '../components/node--news';
 import { NodeBasicPage } from '../components/node--page';
 import { TaxonomyArticle } from '../components/taxonomy/taxonomy--article_type';
 import { TaxonomyPerson } from '../components/taxonomy/taxonomy--person_type';
@@ -52,9 +51,6 @@ export default function EntityPage({
       )}
       {entity.type === 'node--place' && (
         <NodePlace node={entity} />
-      )}
-      {entity.type === 'node--news' && (
-        <NodeNews node={entity} />
       )}
       {entity.type === 'taxonomy_term--article_type' && (
         <TaxonomyArticle
@@ -129,9 +125,6 @@ export async function getStaticProps(context) {
 
   if (type === 'node--page') {
     params.addInclude(['field_page_image.image']);
-  }
-  if (type === 'node--news') {
-    params.addInclude(['field_image.image']);
   }
 
   // other conditions to add includes and filters...
