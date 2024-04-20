@@ -9,7 +9,7 @@ export function Layout({ title, menus, children }) {
   return (
     <>
       <Head>
-        <title>{`${title} - Webcube`}</title>
+        <title>{`${title} - Example`}</title>
       </Head>
       <PreviewAlert />
       <div className="flex flex-col min-h-screen">
