@@ -16,7 +16,7 @@ export default function IndexPage({ menus, events, places }) {
           <div className="w-full lg:flex items-center">
             <div className="w-full lg:w-1/2">
               <h2 className="text-md lg:text-2xl text-gray-600">
-                Powered by Webcube
+                Powered by Example
               </h2>
               <h1 className="text-5xl lg:text-6xl font-bold text-sky-500 mb-2 lg:mb-6">
                 A headless Next.js site
