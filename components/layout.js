@@ -19,7 +19,7 @@ export function Layout({ title, menus, children }) {
               <div className="w-8 h-10">
                 <Image src="/logo.png" alt="Logo" width={76} height={90} />
               </div>
-              <span className="text-lg font-semibold">Webcube</span>
+              <span className="text-lg font-semibold">Example</span>
             </Link>
             {menus && menus.main && <MenuMain menu={menus.main} />}
           </div>
